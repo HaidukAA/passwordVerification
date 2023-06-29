@@ -18,6 +18,7 @@ export class PasswordStrengthCheckerComponent {
 
     if (passwordLength === 0) {
       this.strengthLevel = 'gray';
+      this.strengthLabel  = '';
     } else if (passwordLength < 8) {
       this.strengthLevel = 'red';
       this.strengthLabel = 'Add more characters';
